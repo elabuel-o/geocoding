@@ -116,6 +116,3 @@ nums <- "[:digit:]"
 newds <- newds %>% 
     mutate(add_num = stri_match_all_regex(
         address, nums) %>% map_chr(2))
-
-
-
